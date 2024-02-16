@@ -1,27 +1,8 @@
-small_abc = 'abcdefghijklmnopqrstuvwxyz';
-big_abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-diakritika = 'áčďéěíňóřšťúůýž';
-bezDiakritiky = 'acdeeinorstuuyz';
-diakritikaVelka = 'ÁČĎÉĚÍŇŠŤÚŮÝŽ';
-bezDiakritikyVelka = 'ACDEEINSTUUYZ';
-
 function posunka(text, posun, smerVpravo) {
     var delka = text.length;
     res = '';
 
-    for (let i = 0; i < delka; i++) {
-        if(diakritika.includes(text[i])){
-            text = replaceAt(text, i, bezDiakritiky[diakritika.search(text[i])])
-            console.log(text[i]);
-        }
-
-        if(diakritikaVelka.includes(text[i])){
-            text = replaceAt(text, i, bezDiakritikyVelka[diakritikaVelka.search(text[i])])
-            console.log(text[i]);
-        }
-    }
-
-    console.log(text);
+    text = dediakritizace(text);
 
     if (smerVpravo) {
         res = posunVpravo(text, posun, delka);
@@ -80,8 +61,4 @@ function posunVlevo(text, posun, delka){
     }
 
     return res;
-}
-
-function replaceAt(text, index, replacement) {
-    return text.substr(0, index) + replacement + text.substr(index + 1);
 }
