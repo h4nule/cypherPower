@@ -1,0 +1,1 @@
+posunka('Žůžová zprava je krátká', 5, false)
