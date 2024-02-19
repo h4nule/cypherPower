@@ -1,3 +1,5 @@
+//TODO: Je interpunkce počítaná jako znak? Nebo se tam vůbec nepíše? K předchozímu písmenu?
+
 function ctverec(text) {
     
     text = text.replace(/ /g, '')
@@ -21,7 +23,7 @@ function ctverec(text) {
     // inicializace tabulky
     var tab = inicializaceTab2D(x)
 
-    vypisTabulku(tab, x)
+    vypisTabulkuPodle2Dimenze(tab, x)
 
     // vyplnění tabulky
        var curs = 0;
@@ -43,7 +45,7 @@ function ctverec(text) {
         tab[Math.floor(x / 2)][Math.floor(x / 2)] = text[curs];
     }
 
-    vypisTabulku(tab, x)
+    vypisTabulkuPodle2Dimenze(tab, x)
     
     var res = tabulDoTextu(tab, x);
 
