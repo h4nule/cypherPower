@@ -61,7 +61,7 @@ function vypisTabulkuPodle2Dimenze(tab, x, y) {
     }
 }
 
-function tabulDoTextu(tab, x, y){
+function tabulDoTextuPodle1D(tab, x, y){
     if(y==undefined){
         y = x;
     }
@@ -69,6 +69,20 @@ function tabulDoTextu(tab, x, y){
     for (let i = 0; i < x; i++) {
         for (let j = 0; j < y; j++) {
             res += tab[i][j];
+        }
+    }
+
+    return res;
+}
+
+function tabulDoTextuPodle2D(tab, x, y){
+    if(y==undefined){
+        y = x;
+    }
+    var res = "";
+    for (let i = 0; i < y; i++) {
+        for (let j = 0; j < x; j++) {
+            res += tab[j][i];
         }
     }
 

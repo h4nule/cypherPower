@@ -47,7 +47,7 @@ function ctverec(text) {
 
     vypisTabulkuPodle2Dimenze(tab, x)
     
-    var res = tabulDoTextu(tab, x);
+    var res = tabulDoTextuPodle1D(tab, x);
 
     console.log(res);
     return res;

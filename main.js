@@ -1,2 +1,1 @@
-listeckova('Sněm bude ohromná zábava protože na něm bude pivo. Už se na něj těším.', 5);
-ctverec('Přijďte na sněm Modrého Kruhu příští pátek. Bude to sranda.');
+radkova("Super text na zalušťování řádkovky!xxxx", 5, 6, [0, 2, 4, 1, 3, 5]);
