@@ -3,7 +3,7 @@ const big_abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 const diakritika = 'áčďéěíňóřšťúůýž';
 const bezDiakritiky = 'acdeeinorstuuyz';
-const iakritikaVelka = 'ÁČĎÉĚÍŇŠŤÚŮÝŽ';
+const diakritikaVelka = 'ÁČĎÉĚÍŇŠŤÚŮÝŽ';
 const bezDiakritikyVelka = 'ACDEEINSTUUYZ';
 
 function dediakritizace(text) {
