@@ -17,6 +17,7 @@ function listeckova(text, pocetListecku) {
     console.log(resPole);
     vypisTabulkuPodle1Dimenze(resPole);
 
+    // TODO: Co se píše na zadní stranu lístečků.
     var zada = new Array(pocetListecku);
     zada.forEach(element => {
         element = ''
